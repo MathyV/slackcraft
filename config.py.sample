@@ -14,3 +14,27 @@ config = {
     # The log file format. This is the default; you can uncomment this line to change it if you want
     # "logformat": '%(asctime)s:%(levelname)s:%(message)s',
 }
+
+wowconfig = {
+    # Your Battle.Net Community API key, you need to register here:
+    # https://dev.battle.net/
+    "apikey" : "your-key-goes-here",
+    
+    # The realm you want to monitor
+    "realm" : "Anachronos",
+    
+    # The guild you are part of
+    "guild" : "Knights Of The Frontier",
+    
+    # Where you would like to store the cache slackcraft keeps
+    # This can be any valid database engine for sqlalchemy
+    "database" : "sqlite:///slackcraft.db",
+    
+    # The channels you want announcements on. Do not add a #
+    "announcements" : {
+        # Realm status
+        "realm" : "announcements",
+        # PvP areas
+        "pvp" : "announcements",
+    }
+}
